@@ -20,4 +20,4 @@
 
 Тест 2:
 
-![Screenshot 2](https://github.com/inishevv/lab8/blob/main/2023-11-11_17-52-19.png)
+![Screenshot 2](https://github.com/inishevv/lab8/blob/main/2023-11-11_17-54-48.png)
