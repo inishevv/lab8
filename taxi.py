@@ -5,8 +5,7 @@ def keys1(s, value):
 
 while True:
     try:
-        print('Введите количество сотрудников')
-        n = int(input())
+        n = int(input('Введите количество сотрудников'))
         break
 
     except ValueError:
@@ -23,8 +22,7 @@ flag = 0                                                                        
 for i in range(n):
     while flag < n:
         try:
-            print('сколько км ехать до дома' {i + 1} 'сотруднику: ')
-            x = int(input())
+            x = int(input(f'сколько км ехать до дома {i + 1} сотруднику: '))
             person[i + 1] = x
             flag += 1
             break
@@ -35,8 +33,7 @@ flag1 = 0                                                                       
 for i in range(n):
     while flag1 < n:
         try:
-            print('цена такси {i + 1}: ')
-            y = int(input())
+            y = int(input(f'цена такси {i + 1}: '))
             taxi[i + 1] = y
             flag1 += 1
             break
@@ -69,9 +66,19 @@ for i in range(n):
 
     person_n.append(s3)
 
+for i in range(n):                                       # рассчет стоимоcти
+    sum = taxi1[i] * person1[i]
+    summa += sum
 
 
 
 print(person_n)
+print(summa)
 
+if summa % 10 == 1 and summa % 100 != 11:
+    print(summa, 'рубль')
+if (summa % 10 == 2 and summa % 100 != 12) or (summa % 10 == 3 and summa % 100 != 13) or summa % 10 == 4:
+    print(summa, 'рубля')
+if summa % 10 > 4 or summa % 10 < 1 or summa % 100 == 11 or summa % 100 == 12 or summa % 100 == 13:
+    print(summa, 'рублей')
 
